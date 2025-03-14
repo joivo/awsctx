@@ -48,7 +48,7 @@ SUBCOMMANDS:
 
 ## Installation
 ### Homebrew (macOS only)
-```console
+```shell
 $ brew tap hiro-o918/homebrew-tap
 $ brew install awsctx
 ```
@@ -59,7 +59,7 @@ $ brew install awsctx
 :arrow_down: Download a binary and move to `/usr/local/bin`
 
 #### macOS
-```console
+```shell
 $ curl -s https://api.github.com/repos/hiro-o918/awsctx/releases/latest \
   | jq -r '.assets[] | select(.name | test("^awsctx_v[0-9]+\\.[0-9]+\\.[0-9]+_x86_64-apple-darwin\\.tar\\.gz$")) | .browser_download_url' \
   | xargs wget -O - \
@@ -68,7 +68,7 @@ $ curl -s https://api.github.com/repos/hiro-o918/awsctx/releases/latest \
 ```
 
 #### Linux
-```console
+```shell
 $ curl -s https://api.github.com/repos/hiro-o918/awsctx/releases/latest \
   | jq -r '.assets[] | select(.name | test("^awsctx_v[0-9]+\\.[0-9]+\\.[0-9]+_x86_64-unknown-linux-musl\\.tar\\.gz$")) | .browser_download_url' \
   | xargs wget -O - \
